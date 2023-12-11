@@ -46,16 +46,34 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  golden_toolkit: ^0.15.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+  fonts:
+    - family: Murecho
+      fonts:
+        - asset: assets/fonts/Murecho/static/Murecho-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Murecho/static/Murecho-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Murecho/static/Murecho-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Murecho/static/Murecho-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Murecho/static/Murecho-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Murecho/static/Murecho-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Murecho/static/Murecho-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Murecho/static/Murecho-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Murecho/static/Murecho-Black.ttf
+          weight: 900
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:

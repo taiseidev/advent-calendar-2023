@@ -1,10 +1,9 @@
-import 'package:advent_calendar_2023/ui/golden_test_screen.dart';
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
+class TestUtils {
+  const TestUtils._();
+
+  static Widget buildTestMaterialApp(Widget child) {
     return MaterialApp(
       title: 'Golden Test',
       theme: ThemeData(
@@ -12,7 +11,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: 'Murecho',
       ),
-      home: const GoldenTestScreen(),
+      debugShowCheckedModeBanner: false,
+      home: Material(child: child),
     );
   }
 }
